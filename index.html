@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,70 +11,245 @@
     <title>..:: Valorant Tracker ::..</title>
     <!-- Aula 15/04/2023 -->
     <!-- Inicio Menu Responsivo -->
-        <header id="header">
-            <a id="logo" href="index.html"><img src="./img/logo.png" alt="Logo Valorant Tracker"></a>
-            <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="hamburger"></span>
-                </button>
-                <ul id="menu" role="menu">
-                    <li><a class="LinkMenu" href="index.html">Home</a></li>
-                    <li><a class="LinkMenu" href="produtos.html">Produtos</a></li>
-                    <li><a class="LinkMenu" href="streaming.html">Streming</a></li>
-                    <li><a class="LinkMenu" href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--Fim  menu Reponsitivo-->
+    <header id="header">
+        <a id="logo" href="index.html"><img src="./img/logo.png" alt="Logo Valorant Tracker"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="LinkMenu" href="index.html">Home</a></li>
+                <li><a class="LinkMenu" href="produtos.html">Produtos</a></li>
+                <li><a class="LinkMenu" href="streaming.html">Streming</a></li>
+                <li><a class="LinkMenu" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim  menu Reponsitivo-->
 
-        <!-- Inicio carrousel pagina principal-->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <!-- Inicio carrousel pagina principal-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="200">
-                <img
-                src="./img/carousel.png"
-                class="d-block w-100"
-                alt="..."
-                />
+            <div class="carousel-item active" data-bs-interval="1500">
+                <img src="./img/carousel.png" class="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item" data-bs-interval="200">
-                <img
-                src="./img/carousel2.png"
-                class="d-block w-100"
-                alt="..."
-                />
+            <div class="carousel-item" data-bs-interval="1200">
+                <img src="./img/carousel2.png" class="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item" data-bs-interval="200">
-                <img
-                src="./img/carousel3.png"
-                class="d-block w-100"
-                alt="..."
-                />
+            <div class="carousel-item" data-bs-interval="1200">
+                <img src="./img/carousel3.png" class="d-block w-100" alt="..." />
             </div>
-            </div>
-            <!--Alt + Shift + Seta para baixo, copia o conteudo-->
-            <!--Inicio Conrole Carousel-->
         </div>
-            <button
-                class="carousel-control-prev"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="prev"
-            >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previus</span>
-            </button>    
-            <button
-                class="carousel-control-next"
-                data-bs-target="#carouselExampleInterval"
-                type="button"
-                data-bs-slide="next"
-            >
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>    
+        <!--Alt + Shift + Seta para baixo, copia o conteudo-->
+        <!--Inicio Conrole Carousel-->
     </div>
-</body>
-<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
-</script>
-</html> 00
+    <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previus</span>
+    </button>
+    <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+    <!--Fim controle carousel-->
+    <!--Fim Carousel pagina principal-->
+    <!--Inicio Banner-->
+    <div class="section-banner-home">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-6">
+                    <figure>
+                        <img src="./img/banner.jpg" class="img-fluid" alt="banner-home">
+                    </figure>
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block">
+                        <h1> Venhas saber os resultados das partidas do competitivo de Valorant.</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                            necessitatibus magni ipsam, molestiae fugiat temporibus at quasi consequatur asperiores
+                            nesciunt ea dignissimos excepturi nostrum non. Voluptatem consequatur vel voluptatum
+                            impedit.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIm Banner-->
+    <!-- Inicio Destaque-->
+    <div class="destaque">
+        <div class="containaer">
+            <div class="row dflex justify _content-center">
+                <!--Inicio tag section do texto de destaque-->
+                <section class="col-12">
+                    <h2>Que tal ver os resultados dos jogos de hoje!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores nihil quasi culpa
+                        assumenda? A rem facere sequi! Laboriosam, laborum. Minima magni vitae adipisci aspernatur
+                        soluta porro voluptates deleniti dignissimos?</p>
+                    <a href="produtos.html">Saiba Mais!</a>
+                </section>
+                <!--Fim da tag section do texto de destaque-->
+                <!--Inicio imagem 1-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/1.webp" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 1-->
+                <!--Inicio imagem 2-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/2.webp" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 2-->
+                <!--Inicio imagem 3-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/3.webp" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 3-->
+                <!--Inicio imagem 4-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/4.webp" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 4-->
+                <!--Inicio imagem 5-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/5.webp" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 5-->
+                <!--Inicio imagem 6-->
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                        <a href="produtos.html"><img src="./img/6.jpg" alt="figura-destaque" width="100%"></a>
+                        <figcaption>Jogo <br>de hoje</figcaption>
+                    </figure>
+                </div>
+                <!--Fim da Imagem 6-->
+                <!--Inicio Saiba Mais -->
+                <div class="col-12">
+                    <a href="#">Saiba Mais!</a>
+                </div>
+                <!--FIm do Saiba Mais-->
+            </div>
+        </div>
+    </div>
+                <!--Inicio do Texto das novidades-->
+    <div class="novidades" id="novidades-mobile">
+        <div class="container-fluid">
+            <div class="row">
+                <div col-md-6>
+                    <serction class="text-body">
+                        <h2> Conheça nossas novidades</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aspernatur veniam
+                            porro, repellat cupiditate officia quia laboriosam magnam mollitia rem enim
+                            doloremque soluta labore esse dolores itaque similique repellendus sit!</p>
+                    </serction>
+                </div>
+                <!--Fim do textos novidades-->
+                <!--Inicio da imagem novidades-->
+                <div class="col-md-6">
+                    <figure>
+                        <img src="./img/logo.png" class="img-fluid">
+                    </figure>
+                </div>
+                <!--Fim da Imgem Novidades-->
+        </div>
+    </div>
+    <!--Inicio galeria-->
+    <div class="galeria d-flex align-inten-center">
+        <div class="container">
+            <div class="row">
+                <!--inicio texto galeria-->
+                <div class="col 12">
+                    <section class="texto galeria">
+                        <h2>Conheça nossa Galeria</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto cupiditate
+                            maiores ea asperiores perspiciatis odit eum facere alias autem nobis. Culpa
+                            distinctio fugiat nam assumenda, ex nostrum suscipit ab eum!</p>
+                    </section>
+                </div>
+                <!--Fim texto Galeria-->
+                <!--Inicio Imagem 1 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 1 da Galeria-->
+                <!--Inicio Imagem 2 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 2 da Galeria-->
+                <!--Inicio Imagem 3 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 3 da Galeria-->
+                <!--Inicio Imagem 4 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 4 da Galeria-->
+                <!--Inicio Imagem 5 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 5 da Galeria-->
+                <!--Inicio Imagem 6 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 6 da Galeria-->
+                <!--Inicio Imagem 7 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 7 da Galeria-->
+                <!--Inicio Imagem 8 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 8 da Galeria-->
+                <!--Inicio Imagem 9 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 9 da Galeria-->
+                <!--Inicio Imagem 10 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 10 da Galeria-->
+                <!--Inicio Imagem 11 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 11 da Galeria-->
+                <!--Inicio Imagem 12 da Galeria-->
+                <div class="galery col-6 col-md-3">
+                    <img src="./img/banner.jpg" alt="ig-galeria">
+                </div>
+                <!--Fim imagem 12 da Galeria-->
+
+            </div>
+        </div>
+    </div>
+
+    </body>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js">
+    </script>
+
+</html>
