@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=BrunoAceSC);
 /* Aula 01 - 01/04/2023 */
 
 body, ul {
@@ -7,14 +8,15 @@ body, ul {
 #header #menu a {
     color: black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: Bruno Ace SC;
     text-transform: uppercase;
-    font-size: 1.25em;
-    transition: 0.3s;
+    font-size: 1.25rem;
+    transition: 0.4s;
+    margin-right: 15px;
 }
 #header #menu a:hover {
     color: azure;
-    font-size: 1.6em;
+    font-size: 1.60rem;
     transition: 0.3s;
     text-shadow: 4px 4px 6px #0000007a;
 }
@@ -24,14 +26,14 @@ body, ul {
 }
 #logo img{
     float:left;
-    height: 55px;
+    height: 60px;
     position: relative;
     top: 0px;
     left: 0px;
 }
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     z-index: 90;
     box-sizing: border-box;
     height: 70px;
@@ -39,7 +41,9 @@ body, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f81616;
+     background:#ff4655;
+     box-shadow: 6px 6px 8px black;
+     transition: 0.3s;
 }
 #menu {
     display: flex;
@@ -49,10 +53,20 @@ body, ul {
 #btn-mobile {
     display: none;
 }
-#carrouselExempleInterval {
-    position: relative;
+#carrouselExemplaInterval {
+    position:relative;
     z-index: 10;
-    padding-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 6px 6px 8px #0000007a;
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+}
+#carrousselExampleInterval .carrousel-inner img{
+    height: 550px;
+    width: 100%;
 }
 /*estilo CSS Banner*/
 .section-banner-home {
@@ -60,7 +74,7 @@ body, ul {
     height: 500px;
     margin-top: 10px;
     padding: 50px;
-    background-color: red;
+    background-color:#ff4655;  
 }
 .section-banner-home img {
     height: 400px;
@@ -73,19 +87,28 @@ body, ul {
     font-size: 30px;
     width: 60%;
     font-weight: 500;
-    padding-bottom: 20px;    
+    padding-bottom: 20px; 
+    color: black;  
 }
 .section-banner-home .texto-banner p {
     font-size: 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    color: black;
 }
 .section-banner-home .texto-banner a {
-    color: rgb(0, 0 , 0);
+    color:#ff4655;
     text-decoration: none;
-    background-color: antiquewhite;
+    background-color:#000;
     padding: 4px 14px;
     font-size: 15px;
 }
+.section-banner-home .texto-banner a:hover {
+    color: #ff4655;
+    text-shadow: 2px 2px 4px black;
+    font-size:18px;
+    font-weight: bold;
+}
+
 /*Fim CSS Banner*/
 /* CSS destaque */
 .destaque h2 {
@@ -113,9 +136,74 @@ body, ul {
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: red;
+    color: #ff4655;
     font-size: 18px;
     font-weight: bold;
     margin: 30px 0;
 }
 /*Fim CSS Destaque*/
+
+/* CSS Novidades */
+.novidades .text-body {
+    width: 80%;
+    margin: 10px auto;
+}
+.novidades h2{
+    color: #000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(black, black, black)
+
+}
+.novidades a{
+    color: rgb(255,255,255);
+    text-decoration: underline;
+    text-decoration-color: #ff4655;
+    padding: 6px 12px;
+    background-color: rgb(0, 60, 194,);
+    font-weight: 400;
+}
+/* Fim CSS Novidades */
+/* Inicio CSS Galerias */
+.galeria {
+    margin: 60px auto 20px;
+}
+.galeria p{
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+
+}
+.galeria .gallery{
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/* Inicio CSS Footer */
+.rodape{
+    padding: 50px 50px 0;
+
+}
+.rodape .info-contato p{
+    margin: 0px;
+}
+.ropape a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodape a:hover{
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodape p.dreitos {
+    text-align: center;
+    margin-top: 40px;
+}
