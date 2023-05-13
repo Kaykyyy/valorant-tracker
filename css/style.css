@@ -67,7 +67,75 @@ body, ul {
 #carrousselExampleInterval .carrousel-inner img{
     height: 550px;
     width: 100%;
+
 }
+
+    @media (max-width: 600px)
+{ #menu{
+    display: block;
+    position: absolute;
+    width: 15em;
+    top: 70px;
+    right: 0px;
+    background: #ff4655;
+    transition: 0.6s;
+    z-index: 10000;
+    height: 0px;
+    padding-left: 5px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+ #menu li{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+ } 
+#nav.active #menu{
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: hidden;
+}
+#btn-mobile{
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+#hamburger{
+
+    border-top: 3px solid;  /*Melhorando o hambuger >> Espessura de cada linha */
+    width: 25px;/*Meçhorando o hambuger >> Largura*/
+    color:#100000;/* Alterando a cor do hambuger*/
+}
+#hamburger::after,
+#hamburger::before{
+    content: '';
+    display: block;
+    width: 25px;/* Melhorando o hambuger >> Largura*/
+    height: 2px;
+    background: currentColor;
+    margin-top: 4px;/* Melhorando o hambuger >> Espaçamento sentre o Hambuger*/
+    transition: 0.3s;
+    position: relative;
+    border-top: 3px solid;/* Melhorando o hambuger >> Espessuara de cada linha*/
+}
+#nav.active #hamburger{
+border-top-color: transparent;
+}
+#nav.active #hamburger::before{
+    transform: rotate(135deg);
+}
+#nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+    
+}}
+
+
 /*estilo CSS Banner*/
 .section-banner-home {
     width: 100%;
@@ -144,56 +212,63 @@ body, ul {
 /*Fim CSS Destaque*/
 
 /* CSS Novidades */
+
 .novidades .text-body {
     width: 80%;
-    margin: 10px auto;
+    margin: 70px auto;
 }
-.novidades h2{
+.novidades h2 {
     color: #000;
     font-size: 26px;
     width: 70%;
 }
 .novidades p {
-    color: rgb(black, black, black)
-
+    color: rgb(0, 0, 0);
 }
-.novidades a{
-    color: rgb(255,255,255);
+.novidades a {
+    color: white;
     text-decoration: underline;
     text-decoration-color: #ff4655;
     padding: 6px 12px;
-    background-color: rgb(0, 60, 194,);
+    background-color: black;
     font-weight: 400;
 }
 /* Fim CSS Novidades */
-/* Inicio CSS Galerias */
+
+/* Início CSS Galerias */
+
 .galeria {
     margin: 60px auto 20px;
 }
-.galeria p{
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria p {
     text-align: center;
     width: 50%;
     margin: 14px auto 50px;
-
 }
-.galeria .gallery{
-    width: 30%;
+.galeria .gallery {
+    width: 25%;
     margin: 14px auto 50px;
 }
-/* Inicio CSS Footer */
-.rodape{
-    padding: 50px 50px 0;
+/* Fim CSS Galerias */
 
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
 }
-.rodape .info-contato p{
+.rodape .info-contato p {
     margin: 0px;
 }
-.ropape a{
+.rodape a {
     text-decoration: none;
     color: #000;
     font-size: 13px;
 }
-.rodape a:hover{
+.rodape a:hover {
     font-weight: bold;
 }
 .rodape .redes-sociais {
@@ -203,7 +278,7 @@ body, ul {
     width: 45px;
     height: 40px;
 }
-.rodape p.dreitos {
+.rodape p.direitos {
     text-align: center;
     margin-top: 40px;
 }
